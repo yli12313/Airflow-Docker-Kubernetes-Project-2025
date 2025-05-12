@@ -1,6 +1,6 @@
 # Airflow on Kubernetes with Docker
 
-This project deploys **Apache Airflow** on **Kubernetes** using **Docker** for containerization. It uses the `KubernetesExecutor` to run tasks as Kubernetes pods, with PostgreSQL for metadata storage. Ideal for scalable data pipeline orchestration. (Work in progress. This project will get progressively stronger and bigger over the course of time!)
+This project deploys **Apache Airflow** on **Kubernetes** using **Docker** for containerization. It uses the `KubernetesExecutor` to run tasks as Kubernetes pods, with PostgreSQL for metadata storage. Ideal for scalable data pipeline orchestration. (**Work in progress. This project will get progressively stronger and bigger over the course of time!**)
 
 ```mermaid
 graph TD
