@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: airflow-db-init
+  namespace: airflow
+spec:
+  template:
+    spec:
+      containers:
+      - name: airflow-db-init
+        image: orbit196/project-1:1.0
+        command: ["airflow", "db", "migrate"]
+        envFrom:
+        - configMapRef:
+            name: airflow-config
+      restartPolicy: Never
+  backoffLimit: 4

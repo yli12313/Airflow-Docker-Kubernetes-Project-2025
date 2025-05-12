@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: airflow-pod
+spec:
+  containers:
+    - name: base
+      image: project-1:1.0
+      env:
+        - name: AIRFLOW__CORE__EXECUTOR
+          value: KubernetesExecutor
